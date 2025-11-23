@@ -27,12 +27,14 @@
             align-items: center;
             gap: 24px;
         }
-        .profile img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #e0f7fa;
+       .profile img {
+           width: 130px;
+           height: 130px;
+           border-radius: 50%;
+           object-fit: cover;
+           object-position: center 25%; /* moves the focal point down; increase % to go lower */
+           border: 3px solid #e0f7fa;
+           margin-top: 16px;   /* pushes image down a little bit */
         }
         .profile-info {
             flex: 1;
