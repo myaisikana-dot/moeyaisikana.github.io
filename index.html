@@ -4,150 +4,109 @@
     <meta charset="UTF-8">
     <title>Mo'e Yaisikana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts for Modern Look -->
+    <!-- Google Fonts for modern style -->
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            padding: 0;
-            font-family: "Inter", Arial, sans-serif;
-            background: linear-gradient(120deg, #e0f7fa 10%, #ffe0b2 100%);
-            color: #222;
+            background: linear-gradient(120deg, #e0f7fa 30%, #ffe0b2 100%);
+            font-family: 'Inter', Arial, sans-serif;
         }
-        .container {
-            max-width: 700px;
+        .card {
+            max-width: 430px;
+            margin: 48px auto;
             background: #fff;
-            margin: 40px auto 0;
-            border-radius: 16px;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-            padding: 32px 28px 28px 28px;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(44,87,116,0.11);
+            padding: 38px 26px 28px 26px;
+            text-align: center;
         }
-        .profile {
-            display: flex;
-            align-items: center;
-            gap: 24px;
+        .profile-photo {
+            width: 122px;
+            height: 122px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 25%; /* adjust if head is cut off */
+            margin-top: 10px;
+            margin-bottom: 18px;
+            border: 3px solid #e0f7fa;
         }
-       .profile img {
-           width: 130px;
-           height: 130px;
-           border-radius: 50%;
-           object-fit: cover;
-           object-position: center 25%; /* moves the focal point down; increase % to go lower */
-           border: 3px solid #e0f7fa;
-           margin-top: 16px;   /* pushes image down a little bit */
-        }
-        .profile-info {
-            flex: 1;
-        }
-        .profile-info h1 {
-            margin: 0;
+        h1 {
             font-size: 2em;
             font-weight: 600;
+            margin: 0;
             letter-spacing: 1px;
         }
-        .profile-info h2 {
-            margin: 8px 0 0 0;
-            font-size: 1.08em;
+        .title {
+            font-size: 1.15em;
             color: #347474;
+            margin-top: 8px;
         }
-        .profile-info p {
-            margin: 6px 0 0 0;
+        .institution {
             font-size: 1em;
-        }
-        .section {
-            margin-top: 32px;
-        }
-        .section-title {
-            color: #ef6c00;
-            font-weight: 600;
-            font-size: 1.18em;
-            border-bottom: 2px solid #e0f7fa;
-            padding-bottom: 4px;
-            margin-bottom: 12px;
-        }
-        ul, li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        li {
+            color: #666;
             margin-bottom: 6px;
         }
+        .email {
+            margin: 10px 0 15px 0;
+            color: #2196f3;
+            font-weight: 500;
+            font-size: 0.99em;
+            text-decoration: none;
+        }
+        .intro {
+            background: #e0f7fa38;
+            padding: 14px 14px 16px 14px;
+            border-radius: 12px;
+            font-size: 1.05em;
+            margin-bottom: 16px;
+            margin-top: 18px;
+            color: #3a3a3a;
+        }
+        .section-title {
+            font-size: 1.06em;
+            font-weight: 600;
+            color: #ef6c00;
+            margin-top: 22px;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+        ul {
+            padding: 0;
+            margin: 0 0 12px 0;
+            list-style: none;
+        }
+        li { margin-bottom: 5px; }
         a { color: #2196f3; text-decoration: none; }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            .container { padding: 12px 5px; }
-            .profile { flex-direction: column; align-items: flex-start; }
-            .profile img { width: 100px; height: 100px; }
-        }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <img src="IMG_19211.jpg" alt="Mo’e Yaisikana photo">
-            <div class="profile-info">
-                <h1>Mo’e Yaisikana, MSW</h1>
-                <h2>PhD Student, UC Berkeley</h2>
-                <p>
-                    School of Social Welfare<br>
-                    <a href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a>
-                </p>
-            </div>
+    <div class="card">
+        <img src="IMG_19211.jpg" alt="Mo’e Yaisikana photo" class="profile-photo">
+        <h1>Mo’e Yaisikana, MSW</h1>
+        <div class="title">PhD Student</div>
+        <div class="institution">UC Berkeley School of Social Welfare</div>
+        <a class="email" href="mailto:yaisikana@berkeley.edu">yaisikana@berkeley.edu</a>
+        <div class="section-title">Research Interests</div>
+        <ul>
+            <li>Aging Policy</li>
+            <li>Long-Term Care</li>
+            <li>Democratic Welfare State</li>
+            <li>Science &amp; Technology Studies (STS)</li>
+        </ul>
+        <div class="intro">
+            Hi! I'm Mo'e Yaisikana, a doctoral student at UC Berkeley Social Welfare. I study how democratic politics and civil engagement influence the public Long-Term Care service provision system around the world.
         </div>
-        <div class="section">
-            <div class="section-title">Research Interests</div>
-            <p>Aging Policy, Long-Term Care, Democratic Welfare State, Science & Technology Studies (STS)</p>
-        </div>
-        <div class="section">
-            <div class="section-title">Affiliated Community</div>
-            <p>Cou (Indigenous Taiwanese)</p>
-        </div>
-        <div class="section">
-            <div class="section-title">Education</div>
-            <ul>
-                <li>2021 MSW, National Chengchi University, Taiwan</li>
-                <li>2018 BSW, National Taiwan University, Taiwan</li>
-            </ul>
-        </div>
-        <div class="section">
-            <div class="section-title">Professional Experience</div>
-            <ul>
-                <li>2024–present, Affiliated Graduate Student, ISSI, UC Berkeley</li>
-                <li>2024–2026, Treasurer, GSA Student Chapter, UC Berkeley</li>
-                <li>2020–2023, Executive Secretary, Taiwan Indigenous LTC Leagues</li>
-                <!-- add other entries as needed -->
-            </ul>
-        </div>
-        <div class="section">
-            <div class="section-title">Honors & Awards</div>
-            <ul>
-                <li>2025 Pre-Dissertation Fellow, AGESW</li>
-                <li>2024–2025 Dr. and Mrs. C.Y. Soong Fellowship, UC Berkeley</li>
-                <!-- add other entries as needed -->
-            </ul>
-        </div>
-        <div class="section">
-            <div class="section-title">Governmental-Appointed Positions</div>
-            <ul>
-                <li>2021 Editor, Indigenous Health White Paper 2030, Taiwan MoHW</li>
-                <li>2020 Specialist, Adult Foster Care Manual, Taiwan MoHW</li>
-            </ul>
-        </div>
-        <div class="section">
-            <div class="section-title">Publications</div>
-            <ul>
-                <li>
-                    Perone, A. K., Urrutia-Pujana, L., Zhou, L., Yaisikana, M., & Mendez Campos, B. (2025). 
-                    <i>The equitable aging in health conceptual framework...</i>
-                    <a href="https://doi.org/10.3389/fpubh.2025.1426015" target="_blank">[DOI]</a>
-                </li>
-                <!-- Add more concise entries -->
-            </ul>
-        </div>
-    <!-- Add more sections as needed -->
+        <div class="section-title">Selected Publications</div>
+        <ul>
+            <li>
+                Perone, A. K., Urrutia-Pujana, L., Zhou, L., Yaisikana, M., &amp; Mendez Campos, B. (2025). 
+                <i>The equitable aging in health conceptual framework...</i> 
+                <a href="https://doi.org/10.3389/fpubh.2025.1426015" target="_blank">[DOI]</a>
+            </li>
+            <!-- Add more publications here as needed -->
+        </ul>
     </div>
 </body>
 </html>
